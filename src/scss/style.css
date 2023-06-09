@@ -1,0 +1,37 @@
+.header {
+  background-color: #FEF98D;
+  max-height: 100px;
+}
+.header .logo {
+  margin-top: -10px;
+  max-height: 160px;
+}
+.header .boton_menu {
+  color: #022380;
+  height: 30px;
+  border: none;
+  background: none;
+}
+.header .boton_menu :active {
+  transform: scale(0.9);
+}
+.header .boton_menu .menu {
+  font-size: 30px;
+  height: 100%;
+}
+
+.footer {
+  background-color: #B3DD92;
+}
+.footer h6 {
+  color: #022380;
+}
+.footer .footer__cont--img .icon_social {
+  max-width: 35px;
+}
+.footer .footer__cont--img a img {
+  cursor: pointer;
+}
+.footer .footer__cont--img a img:hover {
+  transform: scale(1.1, 1.1);
+}/*# sourceMappingURL=style.css.map */

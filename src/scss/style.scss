@@ -1,0 +1,43 @@
+//NavBar
+.header{
+    background-color: #FEF98D;
+    max-height: 100px;
+    .logo{
+        margin-top: -10px;
+        max-height: 160px;
+    }
+    .boton_menu{
+        color:#022380;
+        height: 30px;
+        border: none;
+        background:none;
+        :active{
+            transform: scale(0.9);
+        }
+        .menu{
+            font-size: 30px;
+            height: 100%;
+        }
+    } 
+}
+
+//Footer
+.footer{
+    h6{
+        color: #022380;
+    }
+    background-color: #B3DD92;
+    .footer__cont--img{
+        .icon_social{
+            max-width: 35px;
+        }
+        a{
+           img {
+              cursor: pointer;
+              &:hover{
+               transform: scale(1.1, 1.1);
+               }
+           }
+       }
+   }
+}
