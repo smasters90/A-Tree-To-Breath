@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap");
 .header {
   background-color: #FEF98D;
   max-height: 100px;
@@ -20,6 +21,19 @@
   height: 100%;
 }
 
+.logo__main {
+  transform: rotate(15deg);
+  position: relative;
+}
+
+.boton__main {
+  width: 250px;
+  height: 100px;
+  border-radius: 0 50%/0 100%;
+  background: #5cb85c;
+  border: 3px solid #555;
+}
+
 .footer {
   background-color: #B3DD92;
 }
@@ -34,4 +48,16 @@
 }
 .footer .footer__cont--img a img:hover {
   transform: scale(1.1, 1.1);
+}
+
+.nosotros__titulo {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+}
+
+.nosotros__text {
+  margin: 50px 0px;
+  font-size: 25px;
+  font-family: "Karla", sans-serif;
 }/*# sourceMappingURL=style.css.map */

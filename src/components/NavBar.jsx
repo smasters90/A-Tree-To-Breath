@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <>
     <header className='header d-flex flex-row justify-content-between align-items-center'>
-      <img src={logo} className='logo img-fluid' />
+      <Link to={'/'}><img src={logo} className='logo img-fluid' /></Link>
       <div className='d-flex align-items-center mx-4'>
         <button variant="primary" onClick={handleShow} className="boton_menu  me-2"> 
           <HiOutlineMenu className='menu'/>

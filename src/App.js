@@ -4,7 +4,7 @@ import CartContextProvier from './context/cartContext';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Calculadora from './components/Calculadora';
-import Principal from './components/Principal';
+import Main from './components/Main';
 import './scss/style.css';
 import { BrowserRouter , Route,Routes, Link} from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/principal' element={<Principal />}/>
+          <Route path='/' element={<Main />}/>
           <Route path="/calculadora" element={<Calculadora />}/>
         </Routes>
         <Footer />
