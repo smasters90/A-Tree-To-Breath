@@ -3,6 +3,7 @@ import logo from '../img/logo.png';
 import {Link} from "react-router-dom";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { HiOutlineMenu } from 'react-icons/hi';
+import { useLocation } from 'react-router-dom';
 
 function NavBar() {
   const [show, setShow] = useState(false);
@@ -10,9 +11,18 @@ function NavBar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  let contenedor;
+  let location = useLocation();
+  
+  if(location.pathname=="/calculadora"){
+    contenedor = "header__2"
+  } else {
+    contenedor = "header"
+  }
+
   return (
     <>
-    <header className='header d-flex flex-row justify-content-between align-items-center'>
+    <header className={`${contenedor} d-flex flex-row justify-content-between align-items-center`}>
       <Link to={'/'}><img src={logo} className='logo img-fluid' /></Link>
       <div className='d-flex align-items-center mx-4'>
         <button variant="primary" onClick={handleShow} className="boton_menu  me-2"> 

@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<Main />}/>
-          <Route path="/calculadora" element={<Calculadora />}/>
+          <Route path="/calculadora/:ruta" element={<Calculadora />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
