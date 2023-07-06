@@ -11,7 +11,7 @@ function Main() {
       </div>
       <div className='d-flex flex-column'>
         <SobreNosotros />
-        <Boton className="boton__main" extension="/calculadora/1" nombre="Calcula tu impacto" clase="boton__main"/>
+        <Boton className="boton__main" extension={`/calculadora/${1}`} nombre="Calcula tu impacto" clase="boton__main"/>
       </div>
     </div>
     

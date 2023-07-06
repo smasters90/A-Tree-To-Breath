@@ -122,23 +122,43 @@
 }
 
 .cont__principal {
-  height: 475px;
   background-color: #E89C50;
-  gap: 150px;
 }
 .cont__principal .cont__preguntas {
   margin-bottom: 20px;
 }
+.cont__principal .cont__boton {
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 200px;
+  gap: 20px;
+  justify-content: end;
+}
+.cont__principal .cont__boton .boton__cal {
+  width: 160px;
+  height: 60px;
+  border-radius: 0 50%/0 100%;
+  background: #5cb85c;
+  border: 3px solid #555;
+  cursor: pointer;
+  transition: 1s;
+}
+.cont__principal .cont__boton .boton__cal:hover {
+  transform: scale(1.1, 1.1);
+}
 
 .contenedor__principal-img {
+  width: 350px;
+  height: 400px;
   margin-left: 50px;
 }
 .contenedor__principal-img img {
+  margin: auto;
   height: 90%;
 }
 
 .contenedor__principal-preguntas {
-  padding-left: 100px;
+  padding-left: 250px;
 }
 .contenedor__principal-preguntas .contenedor__pregunta {
   margin-top: 50px;
