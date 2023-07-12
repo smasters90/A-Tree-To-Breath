@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap");
+.header {
+  background-color: #FEF98D;
+  max-height: 100px;
+}
+.header .logo {
+  margin-top: -10px;
+  max-height: 160px;
+}
+.header .boton_menu {
+  color: #022380;
+  height: 30px;
+  border: none;
+  background: none;
+}
+.header .boton_menu :active {
+  transform: scale(0.9);
+}
+.header .boton_menu .menu {
+  font-size: 30px;
+  height: 100%;
+}
+
+.header__2 {
+  background-color: #F4F8F4;
+  max-height: 100px;
+}
+.header__2 .logo {
+  margin-top: -10px;
+  max-height: 160px;
+}
+.header__2 .boton_menu {
+  color: #022380;
+  height: 30px;
+  border: none;
+  background: none;
+}
+.header__2 .boton_menu :active {
+  transform: scale(0.9);
+}
+.header__2 .boton_menu .menu {
+  font-size: 30px;
+  height: 100%;
+}
+
+.logo__main {
+  transform: rotate(15deg);
+  position: relative;
+  margin-left: 50px;
+}
+
+.boton__main {
+  width: 230px;
+  height: 60px;
+  border-radius: 0 50%/0 100%;
+  background: #5cb85c;
+  border: 3px solid #555;
+  cursor: pointer;
+  transition: 1s;
+}
+.boton__main:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.nombre__boton {
+  color: #ffffff;
+  font-weight: 700;
+  padding-left: 40px;
+  padding-top: 12px;
+}
+
+.footer {
+  background-color: #B3DD92;
+}
+.footer h6 {
+  color: #022380;
+}
+.footer .footer__cont--img .icon_social {
+  max-width: 35px;
+}
+.footer .footer__cont--img a img {
+  cursor: pointer;
+}
+.footer .footer__cont--img a img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.footer__2 {
+  background-color: #F4F8F4;
+}
+.footer__2 h6 {
+  color: #022380;
+}
+.footer__2 .footer__cont--img .icon_social {
+  max-width: 35px;
+}
+.footer__2 .footer__cont--img a img {
+  cursor: pointer;
+}
+.footer__2 .footer__cont--img a img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.nosotros__titulo {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+}
+
+.nosotros__text {
+  margin: 50px 0px;
+  font-size: 25px;
+  font-family: "Karla", sans-serif;
+}
+.nosotros__text p {
+  text-align: center;
+}
+@media all and (min-width: 1200px) {
+  .nosotros__text p {
+    text-align: start;
+  }
+}
+
+.cont__principal {
+  background-color: #E89C50;
+}
+.cont__principal .cont__preguntas {
+  margin-bottom: 20px;
+}
+.cont__principal .cont__boton {
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 200px;
+  gap: 20px;
+  justify-content: end;
+}
+.cont__principal .cont__boton .boton__cal {
+  width: 160px;
+  height: 60px;
+  border-radius: 0 50%/0 100%;
+  background: #5cb85c;
+  border: 3px solid #555;
+  cursor: pointer;
+  transition: 1s;
+}
+.cont__principal .cont__boton .boton__cal:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contenedor__principal-img {
+  width: 350px;
+  height: 400px;
+  margin-left: 50px;
+}
+.contenedor__principal-img img {
+  margin: auto;
+  height: 90%;
+}
+
+.contenedor__principal-preguntas {
+  padding-left: 250px;
+}
+.contenedor__principal-preguntas .contenedor__pregunta {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  width: 500px;
+  border-radius: 25px 25px;
+  border: 1px solid rgb(50, 50, 119);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+}
+.contenedor__principal-preguntas .respuesta__input {
+  margin-left: 50px;
+  justify-content: center;
+  width: 500px;
+  margin-top: 20px;
+}
+.contenedor__principal-preguntas .contenedor__respuesta-span {
+  margin-left: 10px;
+}
+.contenedor__principal-preguntas .contenedor__respuesta-span .respuesta__span {
+  margin: 0px 25px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
