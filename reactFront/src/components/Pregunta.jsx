@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
-function Pregunta() {
+function Pregunta(props) {
   let [value, setValue] = useState(1);
 
 
@@ -16,7 +16,7 @@ function Pregunta() {
     <>
       <div className='contenedor__principal-preguntas'>
         <div className='contenedor__pregunta'>
-          <p className='titulo__pregunta'>¿Qué distancia semanal realizás en colectivo?</p>
+          <p className='titulo__pregunta'>{props.titulo}</p>
         </div>
         <input className='respuesta__input' type="range" value={value} onChange={handleChange} min={1} max={5} aria-labelledby="continuous-slider"/>
         <div className='contenedor__respuesta-span'>

@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap");
+@font-face {
+  font-family: "Organic";
+  src: url("/public/assets/fonts/Organic.ttf") format("truetype");
+}
 .header {
-  background-color: #FEF98D;
+  background-color: #F7F7F7;
   max-height: 100px;
 }
 .header .logo {
   margin-top: -10px;
-  max-height: 160px;
+  max-height: 120px;
+}
+.header p {
+  padding-left: 15px;
+  font-family: "Organic";
+  font-size: 27px;
 }
 .header .boton_menu {
   color: #022380;

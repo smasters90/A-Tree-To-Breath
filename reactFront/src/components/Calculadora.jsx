@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import Pregunta from './Pregunta';
 import Imagen from './Imagen';
-import Boton from './Boton';
 
 
-const URI = 'endpoint';
+
+const URI = 'http://localhost:8080';
 
 function Calculadora() {
   let arrayImagenes = [
@@ -52,7 +52,6 @@ function Calculadora() {
         <Imagen nameImagen={nameImagen} />
         <div>
           {preguntas.map((pregunta)=> {
-            if(ruta == pregunta.id && ruta+1 == pregunta.id){
               <Pregunta
               id = {pregunta.id}
               titulo = {pregunta.titulo}
@@ -61,12 +60,9 @@ function Calculadora() {
               opc3 = {pregunta.opc3}
               opc4 = {pregunta.opc4}
               opc5 = {pregunta.opc5}  
-            />
-            }            
+            />            
             }) 
           }
-          
-          <Pregunta />
         </div>
         <div className='d-flex flex-row align-items-center mb-3 cont__boton '>
           <button onClick={handleDown} className="boton__cal" > <p className='nombre__boton me-5'>ATRAS</p> </button>
