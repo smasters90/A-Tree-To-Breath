@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
 @font-face {
     font-family: 'Organic';
     src: url('/public/assets/fonts/Organic.ttf') format('truetype');
@@ -6,17 +7,20 @@
 
 //NavBar
 .header{
+    width: 100%;
     background-color: #F7F7F7;
     max-height: 100px;
     .logo{
-
         margin-top: -10px;
         max-height: 120px;
     }
     p{
         padding-left: 15px;
         font-family:'Organic';
-        font-size: 27px;
+        font-size: 17px;
+        @media screen and (min-width:600px ){
+            font-size: 27px;
+        }
     }
     .boton_menu{
         color:#022380;
@@ -58,20 +62,24 @@
 
 //Main
 
-.logo__main{
-    transform: rotate(15deg);
-    position: relative;
-    margin-left: 50px;
+.cont__img{
+    .logo__main-tree{
+        width: 70%;
+        position: relative;
+    }
+    .logo__main-steps{
+        width: 30%;
+        position: relative;
+    }
 }
 
+
 .boton__main{
-    width: 230px;
-    height: 60px;
-    -moz-border-radius: 0 50% / 0 100%;
-    -webkit-border-radius: 0 50% / 0 100%;
-    border-radius: 0 50% / 0 100%;
-    background: #5cb85c;
-    border: 3px solid #555;
+    width: 130px;
+    height: 30px;
+    background: #2D7A74;
+    border: 3px solid #2D7A74;
+    border-radius: 10px;
     cursor: pointer;
     transition:1s;
     &:hover{
@@ -85,19 +93,17 @@
 .nombre__boton{
     color: #ffffff;
     font-weight: 700;
-    padding-left: 40px;
-    padding-top: 12px;  
+    padding-left: 10px;
 }
 
 //Footer
 .footer{
-    h6{
-        color: #022380;
-    }
-    background-color: #B3DD92;
+    background-color: #F7F7F7;
     .footer__cont--img{
+        padding-right: 20px;
+        height: 30px;
         .icon_social{
-            max-width: 35px;
+            max-width: 25px;
         }
         a{
            img {
@@ -137,12 +143,19 @@
     font-family: 'Karla', sans-serif;
 }
 .nosotros__text{
-    margin: 50px 0px;
     font-size: 25px;
     font-family: 'Karla', sans-serif;
-
-    p{
-        text-align: center;
+    .text__1{
+        font-family: 'Manjari', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        @media all and (min-width: 1200px){
+            text-align: start;
+        }
+    }
+    .text__2{
+        font-family: 'Manjari', sans-serif;
+        font-size: 20px;
         @media all and (min-width: 1200px){
             text-align: start;
         }
