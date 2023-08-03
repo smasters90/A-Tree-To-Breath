@@ -62,21 +62,53 @@
 
 //Main
 
-.cont__img{
-    .logo__main-tree{
-        width: 70%;
+.contenedor__principal{
+    .cont__img{
+        margin-top: 50px;
         position: relative;
+        .logo__main-tree{
+            margin-left: 140px;
+            max-height: 350px;
+            width: 65%;
+            position: relative;
+            @media screen and (min-width:600px ){
+                margin-left: 150px;
+                margin-top: 20px;
+                position: relative;
+            }
+        }
+        .logo__main-steps{     
+            z-index: 10;  
+            max-height: 290px;
+            bottom:10%;
+            left: 10%; 
+            width: 50%;
+            position: absolute;
+            @media screen and (min-width:600px ){
+                max-height: 800px;
+                z-index: 10;   
+                left:-5%;
+                margin-top: 50px; 
+                width: 45%;
+                position: absolute;
+            }
+        }
     }
-    .logo__main-steps{
-        width: 30%;
-        position: relative;
+    @media screen and (min-width:600px ){
+        height: 470px;  
     }
 }
+
+//Progress Bar
+.progress__bar{
+    background-color: #8D9A08;
+ }
 
 
 .boton__main{
     width: 130px;
     height: 30px;
+    margin-right: 5px;
     background: #2D7A74;
     border: 3px solid #2D7A74;
     border-radius: 10px;
@@ -136,30 +168,36 @@
 }
 
 //SobreNosotros
-
-.nosotros__titulo{
-    font-size: 35px;
-    font-weight: 700;
-    font-family: 'Karla', sans-serif;
-}
-.nosotros__text{
-    font-size: 25px;
-    font-family: 'Karla', sans-serif;
-    .text__1{
-        font-family: 'Manjari', sans-serif;
-        font-size: 40px;
+.nosotros{
+    .nosotros__titulo{
+        font-size: 35px;
         font-weight: 700;
-        @media all and (min-width: 1200px){
-            text-align: start;
-        }
+        font-family: 'Karla', sans-serif;
     }
-    .text__2{
-        font-family: 'Manjari', sans-serif;
-        font-size: 20px;
-        @media all and (min-width: 1200px){
-            text-align: start;
+    .nosotros__text{
+        font-size: 25px;
+        font-family: 'Karla', sans-serif;
+        .text__1{
+            font-family: 'Manjari', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            @media all and (min-width: 1200px){
+                text-align: start;
+            }
         }
-    }
+        .text__2{
+            font-family: 'Manjari', sans-serif;
+            font-size: 20px;
+            @media all and (min-width: 1200px){
+                text-align: start;
+            }
+        }
+
+        @media screen and (min-width:600px ){
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    }   
 }
 
 
@@ -178,19 +216,41 @@
         margin-right: 200px;
         gap: 20px;
         justify-content: end;
-        .boton__cal{
-            width: 160px;
-            height: 60px;
-            -moz-border-radius: 0 50% / 0 100%;
-            -webkit-border-radius: 0 50% / 0 100%;
-            border-radius: 0 50% / 0 100%;
-            background: #5cb85c;
-            border: 3px solid #555;
+        .boton__cal-back{
+            width: 86px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #FFB875;
+            border: 1px solid #e7e7e7;
+            text-align: center;
+            color: #5B5151;
+            font-family: 'Manjari', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 4px;
             cursor: pointer;
             transition:1s;
             &:hover{
                 transform: scale(1.1, 1.1);
-            }
+            }   
+        }
+        .boton__cal-next{
+            width: 86px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #2D7A74;
+            border: 1px solid #e7e7e7;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Manjari', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 4px;
+            cursor: pointer;
+            transition:1s;
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }   
         }
     }
 }

@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import Pregunta from './Pregunta';
 import Imagen from './Imagen';
-
+import NavigateButton from './NavigateButton';
+import BarProgress from './BarProgress';
 
 
 const URI = 'http://localhost:8080';
@@ -24,16 +25,16 @@ function Calculadora() {
   useEffect(() => {
     let result = arrayImagenes.find(imagen => imagen.id === parseInt(ruta));
     setNameImagen(result.name);
-    getPreguntas();
+    /*getPreguntas();*/
   },[ruta]);
 
 
-  function handleUp() {
+  function handleNext() {
     ruta = parseInt(ruta) +1;
     navigate(`/calculadora/${ruta}`)
   }
 
-  function handleDown() {
+  function handleBack() {
     if (ruta == 1) {
       ruta = 1;
     } else {
@@ -42,13 +43,14 @@ function Calculadora() {
     navigate(`/calculadora/${ruta}`)
   }
 
-  async function getPreguntas (){
+  /*async function getPreguntas (){
     const res = await axios.get(URI);
     setPreguntas(res.data);
-  }
+  }*/
   return (
     <>
       <div className='cont__principal d-flex flex-wrap'>
+      <BarProgress />
         <Imagen nameImagen={nameImagen} />
         <div>
           {preguntas.map((pregunta)=> {
@@ -65,8 +67,8 @@ function Calculadora() {
           }
         </div>
         <div className='d-flex flex-row align-items-center mb-3 cont__boton '>
-          <button onClick={handleDown} className="boton__cal" > <p className='nombre__boton me-5'>ATRAS</p> </button>
-          <button onClick={handleUp} className="boton__cal " > <p className='nombre__boton me-5 ps-4 ms-2'>SIGUIENTE</p> </button>
+          <NavigateButton nameClass="boton__cal-back" func={handleBack} name="< BACK" />
+          <NavigateButton nameClass="boton__cal-next" func={handleNext} name="NEXT >"/>
         </div>
       </div>
     </>
