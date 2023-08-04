@@ -19,12 +19,16 @@ function Calculadora() {
 
   let [preguntas, setPreguntas] = useState([]);
   let [nameImagen, setNameImagen] = useState();
+  let [value, setValue] = useState(10);
+
   let { ruta } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     let result = arrayImagenes.find(imagen => imagen.id === parseInt(ruta));
     setNameImagen(result.name);
+    setValue((ruta*10))
+    console.log(value)
     /*getPreguntas();*/
   },[ruta]);
 
@@ -50,21 +54,10 @@ function Calculadora() {
   return (
     <>
       <div className='cont__principal d-flex flex-wrap'>
-      <BarProgress />
         <Imagen nameImagen={nameImagen} />
+        <BarProgress value max={100}/>
         <div>
-          {preguntas.map((pregunta)=> {
-              <Pregunta
-              id = {pregunta.id}
-              titulo = {pregunta.titulo}
-              opc1 = {pregunta.opc1}
-              opc2 = {pregunta.opc2}
-              opc3 = {pregunta.opc3}
-              opc4 = {pregunta.opc4}
-              opc5 = {pregunta.opc5}  
-            />            
-            }) 
-          }
+
         </div>
         <div className='d-flex flex-row align-items-center mb-3 cont__boton '>
           <NavigateButton nameClass="boton__cal-back" func={handleBack} name="< BACK" />

@@ -101,7 +101,9 @@
 }
 
 .progress__bar {
-  background-color: #8D9A08;
+  width: 111px;
+  height: 10px;
+  border-radius: 5px;
 }
 
 .boton__main {
@@ -192,9 +194,6 @@
   }
 }
 
-.cont__principal {
-  background-color: #E89C50;
-}
 .cont__principal .cont__preguntas {
   margin-bottom: 20px;
 }

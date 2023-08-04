@@ -1,10 +1,19 @@
-import React from 'react';
-import ProgressBar from "@ramonak/react-progress-bar";
+import React from "react";
+import PropTypes from 'prop-types'
 
-function BarProgress() {
+function BarProgress({value, max}) {
   return (
-    <progress className='progress__bar' id="file" max="8" value="1">10%</progress>     
+    <progress value={value} max={max} />  
   )
 }
 
-export default BarProgress
+BarProgress.popTypes = {
+  value: PropTypes.number.isRequired,
+  max: PropTypes.number,
+}
+
+BarProgress.defaultProps = {
+  max: 100,
+}
+
+export default BarProgress;
