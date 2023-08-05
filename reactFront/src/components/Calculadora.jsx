@@ -15,6 +15,14 @@ function Calculadora() {
     { id: 1, name: "/assets/iconoPreg1.png" },
     { id: 2, name: "/assets/logoMain2.png" },
     { id: 3, name: "/assets/iconoPreg1.png" },
+    { id: 4, name: "/assets/logoMain2.png" },
+    { id: 5, name: "/assets/iconoPreg1.png" },
+    { id: 6, name: "/assets/logoMain2.png" },
+    { id: 7, name: "/assets/iconoPreg1.png" },
+    { id: 8, name: "/assets/logoMain2.png" },
+    { id: 9, name: "/assets/iconoPreg1.png" },
+    { id: 10, name: "/assets/logoMain2.png" },
+    
   ];
 
   let [preguntas, setPreguntas] = useState([]);
@@ -28,7 +36,6 @@ function Calculadora() {
     let result = arrayImagenes.find(imagen => imagen.id === parseInt(ruta));
     setNameImagen(result.name);
     setValue((ruta*10))
-    console.log(value)
     /*getPreguntas();*/
   },[ruta]);
 
@@ -55,7 +62,7 @@ function Calculadora() {
     <>
       <div className='cont__principal d-flex flex-wrap'>
         <Imagen nameImagen={nameImagen} />
-        <BarProgress value max={100}/>
+        <BarProgress value={value} max={100} />
         <div>
 
         </div>

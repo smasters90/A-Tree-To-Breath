@@ -100,12 +100,6 @@
   }
 }
 
-.progress__bar {
-  width: 111px;
-  height: 10px;
-  border-radius: 5px;
-}
-
 .boton__main {
   width: 130px;
   height: 30px;
