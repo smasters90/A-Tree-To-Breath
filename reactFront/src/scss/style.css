@@ -1,37 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manjari&display=swap");
 @font-face {
-  font-family: "Organic";
+  font-family: 'Organic';
   src: url("/public/assets/fonts/Organic.ttf") format("truetype");
 }
+
 .header {
   width: 100%;
   background-color: #F7F7F7;
   max-height: 100px;
 }
+
 .header .logo {
   margin-top: -10px;
   max-height: 120px;
 }
+
 .header p {
   padding-left: 15px;
-  font-family: "Organic";
+  font-family: 'Organic';
   font-size: 17px;
 }
+
 @media screen and (min-width: 600px) {
   .header p {
     font-size: 27px;
   }
 }
+
 .header .boton_menu {
   color: #022380;
   height: 30px;
   border: none;
   background: none;
 }
+
 .header .boton_menu :active {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
+
 .header .boton_menu .menu {
   font-size: 30px;
   height: 100%;
@@ -41,19 +49,24 @@
   background-color: #F4F8F4;
   max-height: 100px;
 }
+
 .header__2 .logo {
   margin-top: -10px;
   max-height: 160px;
 }
+
 .header__2 .boton_menu {
   color: #022380;
   height: 30px;
   border: none;
   background: none;
 }
+
 .header__2 .boton_menu :active {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
+
 .header__2 .boton_menu .menu {
   font-size: 30px;
   height: 100%;
@@ -63,12 +76,14 @@
   margin-top: 50px;
   position: relative;
 }
+
 .contenedor__principal .cont__img .logo__main-tree {
   margin-left: 140px;
   max-height: 350px;
   width: 65%;
   position: relative;
 }
+
 @media screen and (min-width: 600px) {
   .contenedor__principal .cont__img .logo__main-tree {
     margin-left: 150px;
@@ -76,6 +91,7 @@
     position: relative;
   }
 }
+
 .contenedor__principal .cont__img .logo__main-steps {
   z-index: 10;
   max-height: 290px;
@@ -84,6 +100,7 @@
   width: 50%;
   position: absolute;
 }
+
 @media screen and (min-width: 600px) {
   .contenedor__principal .cont__img .logo__main-steps {
     max-height: 800px;
@@ -94,6 +111,7 @@
     position: absolute;
   }
 }
+
 @media screen and (min-width: 600px) {
   .contenedor__principal {
     height: 470px;
@@ -108,10 +126,13 @@
   border: 3px solid #2D7A74;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .boton__main:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .nombre__boton {
@@ -123,64 +144,80 @@
 .footer {
   background-color: #F7F7F7;
 }
+
 .footer .footer__cont--img {
   padding-right: 20px;
   height: 30px;
 }
+
 .footer .footer__cont--img .icon_social {
   max-width: 25px;
 }
+
 .footer .footer__cont--img a img {
   cursor: pointer;
 }
+
 .footer .footer__cont--img a img:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .footer__2 {
   background-color: #F4F8F4;
 }
+
 .footer__2 h6 {
   color: #022380;
 }
+
 .footer__2 .footer__cont--img .icon_social {
   max-width: 35px;
 }
+
 .footer__2 .footer__cont--img a img {
   cursor: pointer;
 }
+
 .footer__2 .footer__cont--img a img:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .nosotros .nosotros__titulo {
   font-size: 35px;
   font-weight: 700;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
+
 .nosotros .nosotros__text {
   font-size: 25px;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
+
 .nosotros .nosotros__text .text__1 {
-  font-family: "Manjari", sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
+
 @media all and (min-width: 1200px) {
   .nosotros .nosotros__text .text__1 {
     text-align: start;
   }
 }
+
 .nosotros .nosotros__text .text__2 {
-  font-family: "Manjari", sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-size: 20px;
 }
+
 @media all and (min-width: 1200px) {
   .nosotros .nosotros__text .text__2 {
     text-align: start;
   }
 }
+
 @media screen and (min-width: 600px) {
   .nosotros .nosotros__text {
     margin-left: 50px;
@@ -191,13 +228,17 @@
 .cont__principal .cont__preguntas {
   margin-bottom: 20px;
 }
+
 .cont__principal .cont__boton {
   width: 100%;
   margin-top: 30px;
   margin-right: 200px;
   gap: 20px;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
+
 .cont__principal .cont__boton .boton__cal-back {
   width: 86px;
   height: 30px;
@@ -206,16 +247,20 @@
   border: 1px solid #e7e7e7;
   text-align: center;
   color: #5B5151;
-  font-family: "Manjari", sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-weight: 700;
   font-size: 18px;
   padding: 4px;
   cursor: pointer;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .cont__principal .cont__boton .boton__cal-back:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
+
 .cont__principal .cont__boton .boton__cal-next {
   width: 86px;
   height: 30px;
@@ -224,15 +269,25 @@
   border: 1px solid #e7e7e7;
   text-align: center;
   color: #ffffff;
-  font-family: "Manjari", sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 4px;
   cursor: pointer;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .cont__principal .cont__boton .boton__cal-next:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.span__BarProgress {
+  margin-right: 20px;
+  font-family: 'Manjari', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .contenedor__principal-img {
@@ -240,6 +295,7 @@
   height: 400px;
   margin-left: 50px;
 }
+
 .contenedor__principal-img img {
   margin: auto;
   height: 90%;
@@ -248,6 +304,7 @@
 .contenedor__principal-preguntas {
   padding-left: 250px;
 }
+
 .contenedor__principal-preguntas .contenedor__pregunta {
   margin-top: 50px;
   margin-left: 50px;
@@ -255,24 +312,30 @@
   background-color: #ffffff;
   width: 500px;
   border-radius: 25px 25px;
-  border: 1px solid rgb(50, 50, 119);
+  border: 1px solid #323277;
   text-align: center;
   padding-top: 10px;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
+
 .contenedor__principal-preguntas .respuesta__input {
   margin-left: 50px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 500px;
   margin-top: 20px;
 }
+
 .contenedor__principal-preguntas .contenedor__respuesta-span {
   margin-left: 10px;
 }
+
 .contenedor__principal-preguntas .contenedor__respuesta-span .respuesta__span {
   margin: 0px 25px;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 700;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

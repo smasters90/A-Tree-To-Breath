@@ -62,7 +62,7 @@ function Calculadora() {
     <>
       <div className='cont__principal d-flex flex-wrap'>
         <Imagen nameImagen={nameImagen} />
-        <BarProgress value={value} max={100} />
+        <BarProgress value={value} max={100} ruta={ruta} />
         <div>
 
         </div>

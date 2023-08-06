@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import Styled from 'styled-components';
 
 const Container = Styled.div`
-  progress {
-
-  }
+  
   progress[value] {
     width: ${props => props.width};
     -webkit-appearance: none;
@@ -27,9 +25,10 @@ const Container = Styled.div`
   } 
 `;
 
-function BarProgress({ value, max, color, width }) {
+function BarProgress({ value, max, color, width, ruta }) {
   return (
-    <Container color={color} width={width}>
+    <Container className="d-flex " color={color} width={width}>
+      <span className="span__BarProgress">Q{ruta} of 10</span>
       <progress value={value} max={max} /> 
     </Container>
   );
